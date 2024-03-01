@@ -17,9 +17,7 @@ pipeline{
         }
          stage('Unit Test Maven'){
             steps{
-                script{
-                    git branch: 'main', url: 'https://github.com/asar4rudra/devops_demo_proj.git'
-                }
+               mvnTest()
                 
             }
         }     
