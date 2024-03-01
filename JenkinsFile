@@ -1,0 +1,9 @@
+stages{
+    stage("Git checkout"){
+        steps{
+            script{
+                git branch: 'main', url: 'https://github.com/asar4rudra/devops_demo_proj.git'
+            }
+        }
+    }
+}
